@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @twitt.message %>
+</p>
+
+My Twitter Info:
+
+My screen name:
+<%=@twitts_data["screen_name"] %><br />
+
+Total twitts:
+<%= @twitts_data["count"] %>
+
+<%= link_to 'Edit', edit_twitt_path(@twitt) %> |
+<%= link_to 'Back', twitts_path %>
