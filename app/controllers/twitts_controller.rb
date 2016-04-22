@@ -21,13 +21,13 @@ require "oauth"
   # GET /twitts/1.json
   def show
 
-consumer_key = "4hhFXBvyNoJlvlqfE1pRNNZIP"
-consumer_secret = "d9qq8faSxBTnvXJQILKABAlPgjOU5lsLbgesvZi5nQllZBbJzW"
+consumer_key = "test"
+consumer_secret = "test"
 
 bearer_token = "#{consumer_key}:#{consumer_secret}"
 bearer_token_64 = Base64.strict_encode64(bearer_token)
 
-twitt_user="AlurRor"
+twitt_user="test"
 
 token_uri = URI("https://api.twitter.com/oauth2/token")
 token_https = Net::HTTP.new(token_uri.host,token_uri.port)
@@ -80,11 +80,11 @@ response = timeline_https.request(request).body
 @twitt = Twitt.new(twitt_params)
 
 
-api_consumer_key = "4hhFXBvyNoJlvlqfE1pRNNZIP"
-api_consumer_secret = "d9qq8faSxBTnvXJQILKABAlPgjOU5lsLbgesvZi5nQllZBbJzW"
+api_consumer_key = "test"
+api_consumer_secret = "test"
 
-api_access_token = '2930635024-61PWHUq1TAoL2C0NmgkJKxRF0wBfML0u6OpO7tb'
-api_access_secret ='GNSp38VuI5xnCt4aT8yAgiUbJNqJB02wpfCazU9K6M9dQ' 
+api_access_token = 'test'
+api_access_secret ='test' 
 
 consumer_key = OAuth::Consumer.new(
   api_consumer_key,
